@@ -11,7 +11,8 @@ _Para probar el proyecto puedes a traves de tu terminal de git bash hacer clone 
 _Teniendo en cuenta que tienes que tener una base de datos en SQL Server (con la estructura del proyecto) y modificar el acceso en el código._
 
 
-### Pre-requisitos 📋
+## Pre-requisitos 📋
+
 
 Para utilizar esta aplicación necesitas:
 - Visual Studio 2019 o cualquier versión compatible.
