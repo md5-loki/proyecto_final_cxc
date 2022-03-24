@@ -36,6 +36,7 @@ namespace Nav
             this.mantenimientoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.balancesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +45,8 @@ namespace Nav
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.tipoDeDocumentoToolStripMenuItem,
-            this.balancesToolStripMenuItem});
+            this.balancesToolStripMenuItem,
+            this.transaccionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -62,7 +64,7 @@ namespace Nav
             // mantenimientoToolStripMenuItem
             // 
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
             this.mantenimientoToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem_Click);
             // 
@@ -77,7 +79,7 @@ namespace Nav
             // mantenimientoToolStripMenuItem1
             // 
             this.mantenimientoToolStripMenuItem1.Name = "mantenimientoToolStripMenuItem1";
-            this.mantenimientoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
             this.mantenimientoToolStripMenuItem1.Text = "Mantenimiento";
             this.mantenimientoToolStripMenuItem1.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem1_Click);
             // 
@@ -92,9 +94,15 @@ namespace Nav
             // mantenimientoToolStripMenuItem2
             // 
             this.mantenimientoToolStripMenuItem2.Name = "mantenimientoToolStripMenuItem2";
-            this.mantenimientoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoToolStripMenuItem2.Size = new System.Drawing.Size(156, 22);
             this.mantenimientoToolStripMenuItem2.Text = "Mantenimiento";
             this.mantenimientoToolStripMenuItem2.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem2_Click);
+            // 
+            // transaccionesToolStripMenuItem
+            // 
+            this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
+            this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.transaccionesToolStripMenuItem.Text = "Transacciones";
             // 
             // Nav
             // 
@@ -121,6 +129,7 @@ namespace Nav
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem balancesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem transaccionesToolStripMenuItem;
     }
 }
 
