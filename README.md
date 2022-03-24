@@ -45,4 +45,22 @@ Luego de haber alterado las lineas para nuestra base de datos, debemos crearla. 
 https://pastebin.com/a0rqRneC
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_Luego de haber realizado los 3 pasos correctamente podremos ejecutar nuestro proyecto desde Visual Studio y veremos la navegacion de esta manera:_
+
+![SC3](https://i.imgur.com/2rfhUx9.png)
+
+<hr>
+
+## Clientes 🧑
+Similar a todas las partes del proyecto utiliza la programacion multicapas con su capa de presentacion, negocios y acceso a datos.
+
+En la parte de clientes tenemos el mantenimiento principal con su opcion de agregar, eliminar y editar:
+
+![SC4](https://i.imgur.com/CI8aAOU.png)
+
+En la parte de agregar tenemos lo siguiente, nos permite agregar nuevos clientes:
+
+![SC5](https://i.imgur.com/vunWfNw.png)
+
+
+
