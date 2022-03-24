@@ -41,4 +41,10 @@ Ya que tenemos el proyecto abierto en nuestro Visual Studio debemos irnos a las 
 Foto
 ```
 
+Paso #3
+
+Luego de haber alterado las lineas para nuestra base de datos, debemos crearla. Para ello te dejamos los scripts con la estructura necesaria:
+
+https://pastebin.com/a0rqRneC
+
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
