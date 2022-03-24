@@ -29,22 +29,20 @@ Paso #1
 
 Despues de haber descargado/clonado el proyecto debemos abrir el archivo .sln que se encuentra en la raiz del proyecto.
 
-```
-Foto
-```
+![SC1](https://i.imgur.com/RpXYYjv.png)
 
 Paso #2
 
 Ya que tenemos el proyecto abierto en nuestro Visual Studio debemos irnos a las diferentes capas de datos y alterar la conexion, para que haga referencia a nuestra base de datos.
 
-```
-Foto
-```
+![SC2](https://i.imgur.com/3aujkP2.png)
 
 Paso #3
 
 Luego de haber alterado las lineas para nuestra base de datos, debemos crearla. Para ello te dejamos los scripts con la estructura necesaria:
 
+```
 https://pastebin.com/a0rqRneC
+```
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
