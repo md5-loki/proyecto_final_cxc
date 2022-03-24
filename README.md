@@ -35,10 +35,10 @@ Foto
 
 Paso #2
 
-Ya que tenemos el proyecto abierto en nuestro Visual Studio debemos irnos a 
+Ya que tenemos el proyecto abierto en nuestro Visual Studio debemos irnos a las diferentes capas de datos y alterar la conexion, para que haga referencia a nuestra base de datos.
 
 ```
-hasta finalizar
+Foto
 ```
 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
