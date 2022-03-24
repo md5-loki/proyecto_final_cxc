@@ -18,7 +18,7 @@ Para utilizar esta aplicación necesitas:
 - Visual Studio 2019 o cualquier versión compatible.
 - SQL Server (con la estructura de datos del proyecto).
 - NET Framework 3.4 en adelante instalado en tu máquina.
-- Conocimiento basico en C# Windows Forms para poder editar el acceso a base de datos.
+- Conocimiento basico en C# Windows Forms y SQL Server para poder editar el acceso a base de datos.
 
 
 ## Instalación 🔧
