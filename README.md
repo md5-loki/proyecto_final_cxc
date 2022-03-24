@@ -78,7 +78,7 @@ como se mencionan en apartados anteriores.
 
 Como podremos ver en la imagen de abajo tenemos un formulario donde se pueden agregar, modificar y eliminar los campos que se muestran tipo tabla: 
 
-![TD1](https://imgur.com/a/ds1yyie)
+![TD1](https://imgur.com/a/ds1yyie.png)
 
 Cuando seleccionamos una fila de la tabla, los textboxs se llenan con sus respectiva información seleccionada, cada campo donde corresponde.
 También nos permite buscar en caso de que tengamos muchos campos que nos impida encontrar un registro fácilmente.
