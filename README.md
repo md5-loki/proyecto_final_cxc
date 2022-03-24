@@ -72,3 +72,11 @@ En la parte de agregar tenemos lo siguiente, nos permite agregar nuevos clientes
 
 <hr>
 
+## Tipos de Documentos 📃
+Esta parte del proyecto (como todas las otras) utliza la programación multicapas que contiene su capa de presentación, negocios y acceso a datos
+como se mencionan en apartados anteriores. 
+
+Como podremos ver en la imagen de abajo tenemos un formulario donde se pueden agregar, modificar y eliminar los campos que se muestran tipo tabla: 
+
+
+
