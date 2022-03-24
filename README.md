@@ -62,5 +62,5 @@ En la parte de agregar tenemos lo siguiente, nos permite agregar nuevos clientes
 
 ![SC5](https://i.imgur.com/vunWfNw.png)
 
-
+<hr>
 
