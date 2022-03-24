@@ -21,17 +21,21 @@ Para utilizar esta aplicación necesitas:
 - Conocimiento basico en C# Windows Forms para poder editar el acceso a base de datos.
 
 
-### Instalación 🔧
+## Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Instalación paso a paso del proyecto:
 
-_Dí cómo será ese paso_
+Paso #1
+
+Despues de haber descargado/clonado el proyecto debemos abrir el archivo .sln que se encuentra en la raiz del proyecto.
 
 ```
-Da un ejemplo
+Foto
 ```
 
-_Y repite_
+Paso #2
+
+Ya que tenemos el proyecto abierto en nuestro Visual Studio debemos irnos a 
 
 ```
 hasta finalizar
