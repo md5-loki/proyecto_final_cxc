@@ -87,4 +87,24 @@ Debemos destacar que cuando queramos agregar un registro tenemos que darle a nue
 
 <hr>
 
+## Transacciones 💵
+En la parte de transacciones tenemos lo que es el mantenimiento principal donde se muestra la tabla con las diversas informaciones. El apartado de buscador donde podremos filtrar desde un número a letras o palabras y al presionar el botón buscar este realizará la búsqueda y lo mostrará en la tabla, al ser este botón presionado de nuevo con el área de buscador ahora vacío, se mostrarán nuevamente todos los datos. Al presionar eliminar se eliminará la fila a la cual pertenece la selección. A continuación se muestra el interfaz de transacciones:
 
+![T](https://i.imgur.com/5LbnMvM.png)
+
+Al presionar añadir se abrirá la interfaz de añadir los datos o detalles para una transacción. En el mismo tenor, editar abrirá la interfaz mencionada anteriormente pero ahora mostrando los datos de la fila donde lo selecciono lleno para estos ser editados. A continuación se muestra el interfaz de añadir o editar transacciones:
+
+![DT](https://i.imgur.com/B1oDfzZ.png)
+
+<hr>
+
+## Balances 📊
+Al igual que la parte de transacciones, en la parte de balances tenemos lo que es el mantenimiento principal donde se muestra la tabla con las diversas informaciones. Tomando en cuenta que posee las mismas características de lo que es el buscador, como la parte de eliminar. A continuación se muestra el interfaz de balances:
+
+![B](https://i.imgur.com/yFan1S4.png)
+
+Al presionar añadir se abrirá la interfaz de añadir los datos o detalles para un balance. Editar abrirá la interfaz anterior pero mostrando los datos de la fila donde lo selecciono pero en este caso lleno para estos ser editados. A continuación se muestra el interfaz de añadir o editar balances:
+
+![DB](https://i.imgur.com/fmJywNd.png)
+
+<hr>
