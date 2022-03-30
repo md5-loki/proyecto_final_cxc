@@ -59,6 +59,22 @@ Luego abrimos el archivo para ver el siguiente programa:
 
 ![SC24](https://i.imgur.com/VkiJBLx.png)
 
+En la primera parte debemos poner el nombre de nuestro servidor, para conseguirlo se hace lo siguiente en SQL Server:
+
+![SC25](https://i.imgur.com/onNTWVI.jpg)
+
+![SC26](https://i.imgur.com/ybiKG0R.png)
+
+En la parte de autenticacion debemos elegir la forma que tengamos, luego de haber autenticado nos debe salir la opcion de elegir nuestra base de datos:
+
+![SC27](https://i.imgur.com/lL3AG9c.jpg)
+
+Luego de haber hecho todo esto y haberle dado a OK, abrimos el archivo .udl como texto en el notepad o cualquier editor de texto:
+
+![SC28](https://i.imgur.com/2YCtKiv.png)
+
+Solo se debe copiar la parte desde donde dice integrated en adelante.
+
 Paso #3
 
 Luego de haber alterado las lineas para nuestra base de datos, debemos crearla. Para ello te dejamos los scripts con la estructura necesaria:
