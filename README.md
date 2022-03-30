@@ -45,6 +45,20 @@ Ya que tenemos el proyecto abierto en nuestro Visual Studio debemos irnos a las 
 
 ![SC2](https://i.imgur.com/3aujkP2.png)
 
+Para obtener el string de la conexion debemos hacer lo siguiente:
+
+Crear un documento de texto:
+
+![SC22](https://i.imgur.com/LpQJH70.png)
+
+Cambiarle el nombre y la extension a .udl:
+
+![SC23](https://i.imgur.com/9v2gunx.png)
+
+Luego abrimos el archivo para ver el siguiente programa:
+
+![SC24](https://i.imgur.com/VkiJBLx.png)
+
 Paso #3
 
 Luego de haber alterado las lineas para nuestra base de datos, debemos crearla. Para ello te dejamos los scripts con la estructura necesaria:
