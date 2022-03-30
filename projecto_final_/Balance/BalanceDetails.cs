@@ -43,17 +43,19 @@ namespace CRUD_Balances
         {
             Balance balance = new Balance();
 
+            balance.IdentificadorCliente = txtIdCliente.Text;
             balance.FechaCorte = DatePickerFechaCorte.Value;
             balance.AntigüedadPromedioSaldos = txtAntiguedadPromedioSaldos.Text;
             balance.Monto = txtMonto.Text;
 
-            balance.IdentificadorCliente = _balance != null ? _balance.IdentificadorCliente : 0;
+            balance.Identificador = _balance != null ? _balance.Identificador : 0;
 
             _capaNegocios.SaveBalance(balance);
         }
 
         private void ClearForm()
         {
+            txtIdCliente.Text = string.Empty;
             DatePickerFechaCorte.Value = DateTime.Today;
             txtAntiguedadPromedioSaldos.Text = string.Empty;
             txtMonto.Text = string.Empty;
@@ -69,6 +71,9 @@ namespace CRUD_Balances
 
             if (balance != null)
             {
+                ClearForm();
+
+                txtIdCliente.Text = balance.IdentificadorCliente;
                 DatePickerFechaCorte.Value = balance.FechaCorte;
                 txtAntiguedadPromedioSaldos.Text = balance.AntigüedadPromedioSaldos;
                 txtMonto.Text = balance.Monto;
@@ -86,5 +91,9 @@ namespace CRUD_Balances
         {
         }
 
+        private void BalanceDetails_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

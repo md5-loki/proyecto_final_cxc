@@ -8,7 +8,8 @@ namespace CRUD_Balances
 {
     public class Balance
     {
-        public int IdentificadorCliente { get; set; }
+        public int Identificador { get; set; }
+        public String IdentificadorCliente { get; set; }
         public DateTime FechaCorte { get; set; }
         public string AntigüedadPromedioSaldos { get; set; }
         public string Monto { get; set; }

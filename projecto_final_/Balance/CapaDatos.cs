@@ -17,14 +17,16 @@ namespace CRUD_Balances
             {
                 conexion.Open();
                 string query = @"
-                                 Insert Into Balances (FechaCorte, AntigüedadPromedioSaldos, Monto)
-                                 Values (@FechaCorte, @AntigüedadPromedioSaldos, @Monto) ";
+                                 Insert Into Balances (IdentificadorCliente, FechaCorte, AntigüedadPromedioSaldos, Monto)
+                                 Values (@identificadorcliente, @FechaCorte, @AntigüedadPromedioSaldos, @Monto) ";
 
+                SqlParameter identificadorcliente = new SqlParameter("@identificadorcliente", balance.IdentificadorCliente);
                 SqlParameter fechaCorte = new SqlParameter("@FechaCorte", balance.FechaCorte);
                 SqlParameter antigüedadPromedioSaldos = new SqlParameter("@AntigüedadPromedioSaldos", balance.AntigüedadPromedioSaldos);
                 SqlParameter monto = new SqlParameter("@Monto", balance.Monto);
 
                 SqlCommand command = new SqlCommand(query, conexion);
+                command.Parameters.Add(identificadorcliente);
                 command.Parameters.Add(fechaCorte);
                 command.Parameters.Add(antigüedadPromedioSaldos);
                 command.Parameters.Add(monto);
@@ -48,17 +50,20 @@ namespace CRUD_Balances
             {
                 conexion.Open();
                 string query = @" Update Balances 
-                                  Set FechaCorte = @FechaCorte,
+                                  Set IdentificadorCliente = @IdentificadorCliente,
+                                      FechaCorte = @FechaCorte,
                                       AntigüedadPromedioSaldos = @AntigüedadPromedioSaldos,
                                       Monto = @Monto
-                                  Where IdentificadorCliente = @IdentificadorCliente ";
+                                  Where Id = @Identificador ";
 
+                SqlParameter identidicador = new SqlParameter("@Identificador", balance.Identificador);
                 SqlParameter identidicadorCliente = new SqlParameter("@IdentificadorCliente", balance.IdentificadorCliente);
                 SqlParameter fechaCorte = new SqlParameter("@FechaCorte", balance.FechaCorte);
                 SqlParameter antigüedadPromedioSaldos = new SqlParameter("@AntigüedadPromedioSaldos", balance.AntigüedadPromedioSaldos);
                 SqlParameter monto = new SqlParameter("@Monto", balance.Monto);
 
                 SqlCommand command = new SqlCommand(query, conexion);
+                command.Parameters.Add(identidicador);
                 command.Parameters.Add(identidicadorCliente);
                 command.Parameters.Add(fechaCorte);
                 command.Parameters.Add(antigüedadPromedioSaldos);
@@ -78,21 +83,22 @@ namespace CRUD_Balances
             }
         }
 
-        public void DeleteBalance(int identificadorCliente)
+        public void DeleteBalance(int identificador)
         {
             try
             {
                 conexion.Open();
                 string query = @"Delete From Balances
-                                 Where IdentificadorCliente = @IdentificadorCliente";
+                                 Where Id = @Identificador";
 
                 SqlCommand command = new SqlCommand(query, conexion);
-                command.Parameters.Add(new SqlParameter("@IdentificadorCliente", identificadorCliente));
+                command.Parameters.Add(new SqlParameter("@Identificador", identificador));
 
                 command.ExecuteNonQuery();
             }
             catch (Exception)
             {
+
                 throw;
             }
             finally
@@ -108,14 +114,14 @@ namespace CRUD_Balances
             try
             {
                 conexion.Open();
-                string query = @" Select IdentificadorCliente, FechaCorte, AntigüedadPromedioSaldos, Monto
+                string query = @" Select Id, IdentificadorCliente, FechaCorte, AntigüedadPromedioSaldos, Monto
                                   From Balances ";
 
                 SqlCommand command = new SqlCommand();
 
                 if (!string.IsNullOrEmpty(search))
                 {
-                    query += "Where IdentificadorCliente Like @search Or FechaCorte Like @search Or AntigüedadPromedioSaldos Like @search Or Monto Like @search ";
+                    query += "Where Id Like @search or IdentificadorCliente Like @search Or FechaCorte Like @search Or AntigüedadPromedioSaldos Like @search Or Monto Like @search ";
 
                     command.Parameters.Add(new SqlParameter("@Search", $"%{search}%"));
                 }
@@ -129,7 +135,8 @@ namespace CRUD_Balances
                 {
                     balances.Add(new Balance
                     {
-                        IdentificadorCliente = int.Parse(reader["IdentificadorCliente"].ToString()),
+                        Identificador = int.Parse(reader["Id"].ToString()),
+                        IdentificadorCliente = (reader["IdentificadorCliente"].ToString()),
                         FechaCorte = (DateTime)reader["FechaCorte"],
                         AntigüedadPromedioSaldos = reader["AntigüedadPromedioSaldos"].ToString(),
                         Monto = reader["Monto"].ToString()
@@ -139,7 +146,7 @@ namespace CRUD_Balances
             }
             catch (Exception)
             {
-                //throw;
+                throw;
             }
             finally 
             {

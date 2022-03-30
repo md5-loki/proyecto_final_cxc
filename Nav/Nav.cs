@@ -37,5 +37,11 @@ namespace Nav
             CRUD_Balances.Main balances = new Main();
             balances.Show();
         }
+
+        private void reporteBalanceClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CRUD_Balances.FormReporteBalances reporteBalances = new FormReporteBalances();
+            reporteBalances.Show();
+        }
     }
 }

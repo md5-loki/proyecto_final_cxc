@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\projecto_final_\Balance\Balances.csproj">
+    <ProjectReference Include="..\projecto_final_\Balance\CRUD_Balances.csproj">
       <Project>{0de1eea8-c7c6-489e-8cd5-3fd82b84e8e8}</Project>
-      <Name>Balances</Name>
+      <Name>CRUD_Balances</Name>
     </ProjectReference>
     <ProjectReference Include="..\projecto_final_\Clientes.csproj">
       <Project>{4f8a80a8-a900-43bb-9c4b-0791d76afdaa}</Project>

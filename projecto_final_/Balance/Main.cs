@@ -39,10 +39,11 @@ namespace CRUD_Balances
                 BalanceDetails balanceDetails = new BalanceDetails();
                 balanceDetails.LoadBalance(new Balance
                 {
-                    IdentificadorCliente = int.Parse(GridBalances.Rows[e.RowIndex].Cells[0].Value.ToString()),
-                    FechaCorte = (DateTime)GridBalances.Rows[e.RowIndex].Cells[1].Value,
-                    AntigüedadPromedioSaldos = GridBalances.Rows[e.RowIndex].Cells[2].Value.ToString(),
-                    Monto = GridBalances.Rows[e.RowIndex].Cells[3].Value.ToString(),
+                    Identificador = int.Parse(GridBalances.Rows[e.RowIndex].Cells[0].Value.ToString()),
+                    IdentificadorCliente = (GridBalances.Rows[e.RowIndex].Cells[1].Value.ToString()),
+                    FechaCorte = (DateTime)GridBalances.Rows[e.RowIndex].Cells[2].Value,
+                    AntigüedadPromedioSaldos = GridBalances.Rows[e.RowIndex].Cells[3].Value.ToString(),
+                    Monto = GridBalances.Rows[e.RowIndex].Cells[4].Value.ToString(),
                 });
                 balanceDetails.ShowDialog(this);
             }
@@ -69,9 +70,9 @@ namespace CRUD_Balances
             balanceDetails.ShowDialog(this);
         }
 
-        private void DeleteBalance(int identificadorCliente)
+        private void DeleteBalance(int identificador)
         {
-            _capaNegocios.DeleteBalance(identificadorCliente);
+            _capaNegocios.DeleteBalance(identificador);
         }
 
         #endregion
@@ -91,5 +92,11 @@ namespace CRUD_Balances
         {
         }
 
+        private void btnreporte_Click(object sender, EventArgs e)
+        {
+            FormReporteBalances Reportes = new FormReporteBalances();
+
+            Reportes.ShowDialog();
+        }
     }
 }

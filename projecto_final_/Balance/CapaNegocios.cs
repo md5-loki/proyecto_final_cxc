@@ -18,7 +18,7 @@ namespace CRUD_Balances
 
         public Balance SaveBalance(Balance balance)
         {
-            if (balance.IdentificadorCliente == 0)
+            if (balance.Identificador == 0)
                 _capaDatos.InsertBalance(balance);
             else
                 _capaDatos.UpdateBalance(balance);
@@ -32,9 +32,9 @@ namespace CRUD_Balances
            return _capaDatos.GetBalances(searchText);
         }
 
-        public void DeleteBalance(int identificadorCliente)
+        public void DeleteBalance(int identificador)
         {
-            _capaDatos.DeleteBalance(identificadorCliente);
+            _capaDatos.DeleteBalance(identificador);
         }
     }
 }

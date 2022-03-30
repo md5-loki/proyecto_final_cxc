@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes", "projecto_final_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipos_Documentos", "projecto_final_\Tipos_Documentos\Tipos_Documentos.csproj", "{97D9FCD7-BA1B-46E5-B274-D1C8DEA3B2AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balances", "projecto_final_\Balance\Balances.csproj", "{0DE1EEA8-C7C6-489E-8CD5-3FD82B84E8E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD_Balances", "projecto_final_\Balance\CRUD_Balances.csproj", "{0DE1EEA8-C7C6-489E-8CD5-3FD82B84E8E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nav", "Nav\Nav.csproj", "{6D4493A5-57CC-4CE2-A9F6-249F4B059FE9}"
 EndProject
