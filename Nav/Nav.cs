@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using projecto_final_;
 using CRUD_Balances;
 using Tipos_Documentos;
+using CRUD_Transacciones;
 
 namespace Nav
 {
@@ -34,7 +35,7 @@ namespace Nav
 
         private void mantenimientoToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            CRUD_Balances.Main balances = new Main();
+            CRUD_Balances.Main balances = new CRUD_Balances.Main();
             balances.Show();
         }
 
@@ -42,6 +43,12 @@ namespace Nav
         {
             CRUD_Balances.FormReporteBalances reporteBalances = new FormReporteBalances();
             reporteBalances.Show();
+        }
+
+        private void mantenimientoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CRUD_Transacciones.Main tran = new CRUD_Transacciones.Main();
+            tran.Show();
         }
     }
 }

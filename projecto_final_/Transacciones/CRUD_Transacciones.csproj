@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D4493A5-57CC-4CE2-A9F6-249F4B059FE9}</ProjectGuid>
+    <ProjectGuid>{41EC5D3C-3FA9-4F39-B22C-5C174A82B51C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Nav</RootNamespace>
-    <AssemblyName>Nav</AssemblyName>
+    <RootNamespace>CRUD_Transacciones</RootNamespace>
+    <AssemblyName>CRUD_Transacciones</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Nav.cs">
+    <Compile Include="CapaDatos.cs" />
+    <Compile Include="CapaNegocios.cs" />
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Nav.Designer.cs">
-      <DependentUpon>Nav.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Nav.resx">
-      <DependentUpon>Nav.cs</DependentUpon>
+    <Compile Include="Transaccion.cs" />
+    <Compile Include="TransaccionesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaccionesDetails.Designer.cs">
+      <DependentUpon>TransaccionesDetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +75,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TransaccionesDetails.resx">
+      <DependentUpon>TransaccionesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Transaccion.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,24 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\projecto_final_\Balance\CRUD_Balances.csproj">
-      <Project>{0de1eea8-c7c6-489e-8cd5-3fd82b84e8e8}</Project>
-      <Name>CRUD_Balances</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\projecto_final_\Clientes.csproj">
-      <Project>{4f8a80a8-a900-43bb-9c4b-0791d76afdaa}</Project>
-      <Name>Clientes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\projecto_final_\Tipos_Documentos\Tipos_Documentos.csproj">
-      <Project>{97d9fcd7-ba1b-46e5-b274-d1c8dea3b2ac}</Project>
-      <Name>Tipos_Documentos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\projecto_final_\Transacciones\CRUD_Transacciones.csproj">
-      <Project>{41ec5d3c-3fa9-4f39-b22c-5c174a82b51c}</Project>
-      <Name>CRUD_Transacciones</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

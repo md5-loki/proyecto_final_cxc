@@ -36,8 +36,9 @@ namespace Nav
             this.mantenimientoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.balancesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteBalanceClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,18 +101,27 @@ namespace Nav
             this.mantenimientoToolStripMenuItem2.Text = "Mantenimiento";
             this.mantenimientoToolStripMenuItem2.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem2_Click);
             // 
-            // transaccionesToolStripMenuItem
-            // 
-            this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
-            this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.transaccionesToolStripMenuItem.Text = "Transacciones";
-            // 
             // reporteBalanceClienteToolStripMenuItem
             // 
             this.reporteBalanceClienteToolStripMenuItem.Name = "reporteBalanceClienteToolStripMenuItem";
             this.reporteBalanceClienteToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.reporteBalanceClienteToolStripMenuItem.Text = "Reporte Balance Cliente";
             this.reporteBalanceClienteToolStripMenuItem.Click += new System.EventHandler(this.reporteBalanceClienteToolStripMenuItem_Click);
+            // 
+            // transaccionesToolStripMenuItem
+            // 
+            this.transaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mantenimientoToolStripMenuItem3});
+            this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
+            this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.transaccionesToolStripMenuItem.Text = "Transacciones";
+            // 
+            // mantenimientoToolStripMenuItem3
+            // 
+            this.mantenimientoToolStripMenuItem3.Name = "mantenimientoToolStripMenuItem3";
+            this.mantenimientoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoToolStripMenuItem3.Text = "Mantenimiento";
+            this.mantenimientoToolStripMenuItem3.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem3_Click);
             // 
             // Nav
             // 
@@ -140,6 +150,7 @@ namespace Nav
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem transaccionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteBalanceClienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem3;
     }
 }
 
