@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\projecto_final_\Balance\CRUD_Balances.csproj">
+    <ProjectReference Include="..\projecto_final_\Balance\Balances.csproj">
       <Project>{0de1eea8-c7c6-489e-8cd5-3fd82b84e8e8}</Project>
-      <Name>CRUD_Balances</Name>
+      <Name>Balances</Name>
     </ProjectReference>
     <ProjectReference Include="..\projecto_final_\Clientes.csproj">
       <Project>{4f8a80a8-a900-43bb-9c4b-0791d76afdaa}</Project>
@@ -92,9 +92,9 @@
       <Project>{97d9fcd7-ba1b-46e5-b274-d1c8dea3b2ac}</Project>
       <Name>Tipos_Documentos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\projecto_final_\Transacciones\CRUD_Transacciones.csproj">
+    <ProjectReference Include="..\projecto_final_\Transacciones\Transacciones.csproj">
       <Project>{41ec5d3c-3fa9-4f39-b22c-5c174a82b51c}</Project>
-      <Name>CRUD_Transacciones</Name>
+      <Name>Transacciones</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
