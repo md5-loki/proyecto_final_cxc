@@ -138,3 +138,17 @@ Al presionar añadir se abrirá la interfaz de añadir los datos o detalles para
 ![DB](https://i.imgur.com/fmJywNd.png)
 
 <hr>
+
+## Reporte de Balances por Usuario 📃
+
+A traves de esta opcion se puede ver el reporte de balance por cada usuario que esta registrado y posee un balance.
+
+![R1](https://i.imgur.com/VLlxHrH.png)
+
+<hr>
+
+## Reporte de Transacciones 📃
+
+A traves de esta opcion se puede ver el reporte de todas la transacciones existentes.
+
+![R2](https://i.imgur.com/XTyaq2I.png)
