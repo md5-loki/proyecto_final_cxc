@@ -39,6 +39,7 @@ namespace Nav
             this.reporteBalanceClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteTransaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,8 @@ namespace Nav
             // transaccionesToolStripMenuItem
             // 
             this.transaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mantenimientoToolStripMenuItem3});
+            this.mantenimientoToolStripMenuItem3,
+            this.reporteTransaccionesToolStripMenuItem});
             this.transaccionesToolStripMenuItem.Name = "transaccionesToolStripMenuItem";
             this.transaccionesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
             this.transaccionesToolStripMenuItem.Text = "Transacciones";
@@ -119,9 +121,16 @@ namespace Nav
             // mantenimientoToolStripMenuItem3
             // 
             this.mantenimientoToolStripMenuItem3.Name = "mantenimientoToolStripMenuItem3";
-            this.mantenimientoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.mantenimientoToolStripMenuItem3.Size = new System.Drawing.Size(191, 22);
             this.mantenimientoToolStripMenuItem3.Text = "Mantenimiento";
             this.mantenimientoToolStripMenuItem3.Click += new System.EventHandler(this.mantenimientoToolStripMenuItem3_Click);
+            // 
+            // reporteTransaccionesToolStripMenuItem
+            // 
+            this.reporteTransaccionesToolStripMenuItem.Name = "reporteTransaccionesToolStripMenuItem";
+            this.reporteTransaccionesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.reporteTransaccionesToolStripMenuItem.Text = "Reporte Transacciones";
+            this.reporteTransaccionesToolStripMenuItem.Click += new System.EventHandler(this.reporteTransaccionesToolStripMenuItem_Click);
             // 
             // Nav
             // 
@@ -151,6 +160,7 @@ namespace Nav
         private System.Windows.Forms.ToolStripMenuItem transaccionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reporteBalanceClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem reporteTransaccionesToolStripMenuItem;
     }
 }
 

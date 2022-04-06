@@ -50,5 +50,11 @@ namespace Nav
             CRUD_Transacciones.Main tran = new CRUD_Transacciones.Main();
             tran.Show();
         }
+
+        private void reporteTransaccionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteTransacciones reporteTransacciones = new ReporteTransacciones();
+            reporteTransacciones.ShowDialog();
+        }
     }
 }
