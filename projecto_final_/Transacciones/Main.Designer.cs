@@ -34,8 +34,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.GridTransacciones = new System.Windows.Forms.DataGridView();
-            this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Eliminar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.identificadorTransaccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoMovimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.identificadorTipoDocumentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +41,10 @@
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.identificadorClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.transaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnReport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridTransacciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -108,27 +109,9 @@
             this.GridTransacciones.DataSource = this.transaccionBindingSource;
             this.GridTransacciones.Location = new System.Drawing.Point(12, 107);
             this.GridTransacciones.Name = "GridTransacciones";
-            this.GridTransacciones.Size = new System.Drawing.Size(776, 331);
+            this.GridTransacciones.Size = new System.Drawing.Size(776, 276);
             this.GridTransacciones.TabIndex = 4;
             this.GridTransacciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridTransacciones_CellContentClick);
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar fila";
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Text = "Editar";
-            this.Editar.UseColumnTextForLinkValue = true;
-            this.Editar.Width = 60;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar fila";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.UseColumnTextForLinkValue = true;
-            this.Eliminar.Width = 70;
             // 
             // identificadorTransaccionDataGridViewTextBoxColumn
             // 
@@ -178,15 +161,46 @@
             this.montoDataGridViewTextBoxColumn.HeaderText = "Monto";
             this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
             // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar fila";
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForLinkValue = true;
+            this.Editar.Width = 60;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar fila";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.UseColumnTextForLinkValue = true;
+            this.Eliminar.Width = 70;
+            // 
             // transaccionBindingSource
             // 
             this.transaccionBindingSource.DataSource = typeof(CRUD_Transacciones.Transaccion);
+            // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReport.Location = new System.Drawing.Point(356, 403);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(86, 29);
+            this.btnReport.TabIndex = 5;
+            this.btnReport.Text = "Reporte";
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReport);
             this.Controls.Add(this.GridTransacciones);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnAdd);
@@ -221,6 +235,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewLinkColumn Editar;
         private System.Windows.Forms.DataGridViewLinkColumn Eliminar;
+        private System.Windows.Forms.Button btnReport;
     }
 }
 

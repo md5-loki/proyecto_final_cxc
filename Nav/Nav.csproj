@@ -92,9 +92,9 @@
       <Project>{97d9fcd7-ba1b-46e5-b274-d1c8dea3b2ac}</Project>
       <Name>Tipos_Documentos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\projecto_final_\Transacciones\Transacciones.csproj">
+    <ProjectReference Include="..\projecto_final_\Transacciones\Transacciones_u.csproj">
       <Project>{41ec5d3c-3fa9-4f39-b22c-5c174a82b51c}</Project>
-      <Name>Transacciones</Name>
+      <Name>Transacciones_u</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

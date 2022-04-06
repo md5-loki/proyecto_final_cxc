@@ -62,6 +62,11 @@ namespace CRUD_Transacciones
             txtSearch.Text = String.Empty;
         }
 
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            ReporteTransacciones reporteTransacciones = new ReporteTransacciones();
+            reporteTransacciones.ShowDialog();
+        }
 
         #endregion
 

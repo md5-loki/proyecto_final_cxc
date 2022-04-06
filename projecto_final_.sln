@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balances", "projecto_final_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nav", "Nav\Nav.csproj", "{6D4493A5-57CC-4CE2-A9F6-249F4B059FE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transacciones", "projecto_final_\Transacciones\Transacciones.csproj", "{41EC5D3C-3FA9-4F39-B22C-5C174A82B51C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transacciones_u", "projecto_final_\Transacciones\Transacciones_u.csproj", "{41EC5D3C-3FA9-4F39-B22C-5C174A82B51C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
