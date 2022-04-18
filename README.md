@@ -6,7 +6,7 @@ _Hola, somos el grupo #2 y este es nuestro proyecto final. Se trata sobre una ap
 
 **Integrantes:** (La parte que aporto y enlace a su github personal respectivamente)
 
-* **Ludwig Cabrera** - *Clientes* - [Ludwig](https://github.com/md5-loki)
+* **Ludwig Cabrera** - *Clientes* - [Ludwig](https://github.com/not-ludwig)
 * **Gilberto Ubiera** - *Tipos de Documento* - [Gilberto](https://github.com/Diretol00)
 * **Carlos Henriquez** - *Balances y Transacciones* - [Carlos](https://github.com/Carlos-Henriquez)
 
